@@ -1,0 +1,965 @@
+# ============================================================================
+# DEPENDÊNCIAS E NODE MODULES
+# ============================================================================
+
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnp
+.pnp.js
+npm-shrinkwrap.json
+*.lock
+
+# ============================================================================
+# ARQUIVOS DE SISTEMA OPERACIONAL
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+.DS_Store?
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Windows*
+.lnk
+.shortcut
+*.lnk
+.~*
+~$*
+*.stackdump
+
+# Linux
+.Trash-*
+.nfs*
+.fuse_hidden*
+*_COPY_*
+*_OLD_*
+*.swp
+.directory
+.mount_*
+
+# ============================================================================
+# IDEs, EDITORES E FERRAMENTAS DE DESENVOLVIMENTO
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.vscode/settings.json
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/symbols.json
+.vscode/*.log
+
+# JetBrains (IntelliJ IDEA, WebStorm, PyCharm, etc)
+.idea/
+.idea_modules/
+*.iml
+*.iws
+*.ipr
+*.irc
+.gradle/
+.gradle/*
+out/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.factorypath
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+.sublime-grunt.cache
+
+# Atom
+.atom/
+.atomrc
+.apm/
+
+# Vim/Neovim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt][a-z]
+[._]ss[a-z]
+[._]sw[a-p]
+*~
+Session.vim
+Sessionx.vim
+.netrwhist
+tags
+.vim/
+.viminfo
+*.spl
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+.vimrc.local
+.netrwhist_*
+
+# Emacs
+*~
+\#*\#
+.\#*
+*_flymake.*
+.#*
+auto-save-list/
+tramp
+.\#*
+.session
+.emacs.desktop*
+\#auto-save-list\#
+
+# VS Studio
+.vs/
+.vscode/
+ipch/
+.sln.iml
+.sln
+
+# Eclipse
+.settings/
+.project
+.classpath
+.c9/
+*.launch
+.factorypath
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+.nb-gradle-metadata/
+
+# XCode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+xcuserdata/
+DerivedData/
+.xcode.env
+
+# Android Studio
+.gradle
+.idea/
+.idea
+local.properties
+*.iml
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+.classpath
+.project
+.properties
+
+# Xcode
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# ============================================================================
+# LOGS E ARQUIVOS TEMPORÁRIOS
+# ============================================================================
+
+# Logs gerais
+logs/
+log/
+*.log
+*.log.gz
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-error.log*
+lerna-debug.log*
+lerna-error.log*
+
+# Diagnostic reports (exemplo: Node.js)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+diagnostics.log
+diagnostics_*.log
+
+# Logs do servidor
+access.log
+error.log
+server.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_esm/
+.rts2_cache_umd/
+
+# Diretórios temporários
+tmp/
+temp/
+tempdir/
+.tmp/
+.temp/
+*.tmp
+.cache/
+.eslintcache
+.stylelintcache
+.prettiercache
+.babel-cache/
+.parcel-cache
+
+# Lixo de sistema
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ============================================================================
+# ARQUIVOS DE CONFIGURAÇÃO LOCAL/PRIVADA
+# ============================================================================
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.testing
+.env.staging
+.env.*.local.js
+
+# Arquivos de configuração local
+config.local.js
+config.local.json
+config.local.ts
+settings.local.json
+local-config.js
+.localrc
+.local/
+local/
+
+# Chaves SSH/API
+.ssh/
+.ssl/
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+*.cer
+
+# Credenciais
+.credentials
+.secrets
+secrets/
+private/
+credentials.json
+aws-credentials.json
+
+# ============================================================================
+# ARQUIVOS BUILD, COMPILADOS E DISTRIBUÍDOS
+# ============================================================================
+
+# Diretórios de build
+dist/
+build/
+out/
+output/
+bin/
+lib/
+release/
+build-release/
+.build/
+_build/
+.webpack/
+
+# Next.js / Nuxt / Gatsby / Remix / Svelte kit
+.next/
+.nuxt/
+.cache/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.env.example
+.env.test
+.vuepress/.cache/
+.output
+.vercel
+.svelte-kit
+
+# Rollup
+rollup.config.*.js
+
+# Parcel
+.parcel-cache
+parcel-cache/
+dist/
+
+# Vite
+.vite/
+dist/
+
+# Astro
+.astro/
+dist/
+
+# Coverage
+coverage/
+.coverage/
+.nyc_output/
+htmlcov/
+coverage.xml
+*.cover
+.pytest_cache/
+nosetests.xml
+.hypothesis/
+
+# Storybook
+storybook-static/
+
+# ============================================================================
+# ARQUIVOS DE TESTE E COBERTURA
+# ============================================================================
+
+# Test files
+test-results/
+test-output/
+test-coverage/
+.test-cache/
+.mocharc.local.js
+jest.config.local.js
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Playwright
+.playwright-cache/
+test-results/
+
+# Selenium
+webdriver-manager/
+
+# Coverage
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# ============================================================================
+# ARQUIVOS DE MÍDIA E RECURSOS
+# ============================================================================
+
+# Imagens temporárias/grandes
+*.psd
+*.ai
+*.sketch
+*.xcf
+*.fig
+*.afdesign
+*.xcf
+.tmp-*-*
+*.raw
+*.arw
+*.dng
+
+# Áudio
+*.wav
+*.flac
+*.aiff
+*.aif
+*.ape
+*.wma
+*.m4a
+.tmp-audio
+*.mp3.tmp
+
+# Vídeo
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+.tmp-video
+*.mp4.tmp
+
+# MIDI (opcional - comentar se quiser manter)
+# *.mid
+# *.midi
+
+# Imagens muito grandes
+*.tiff
+*.tif
+*.heic
+*.heif
+*.jp2
+*.j2k
+*.psb
+
+# ============================================================================
+# ARQUIVOS COMPACTADOS
+# ============================================================================
+
+# Arquivos ZIP/RAR/7z/TAR
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tgz
+*.gz
+*.bz2
+*.iso
+*.dmg
+*.exe
+*.msi
+*.jar
+
+# ============================================================================
+# BANCOS DE DADOS
+# ============================================================================
+
+# SQLite
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# MySQL
+*.sql
+mysql-data/
+
+# PostgreSQL
+*.pgdump
+pg_data/
+
+# MongoDB
+*.bson
+mongodb-data/
+
+# Firebase
+firebase-debug.log
+firestore-debug.log
+
+# Realtime DB
+database.json
+
+# ============================================================================
+# DEPENDÊNCIAS OPCIONAIS
+# ============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ruby
+.bundle/
+vendor/bundle/
+Gemfile.lock
+*.gem
+pkg/
+.ruby-version
+.ruby-gemset
+
+# PHP
+vendor/
+composer.lock
+vendor-bin/*/vendor/
+
+# Go
+vendor/
+go.sum
+dist/
+
+# Rust
+/target/
+Cargo.lock
+*.rlib
+
+# .NET
+bin/
+obj/
+Debug/
+Release/
+*.user
+*.suo
+*.sln
+project.lock.json
+project.fragment.lock.json
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+
+# ============================================================================
+# DOCUMENTAÇÃO GERADA
+# ============================================================================
+
+# Documentação
+docs/_build/
+docs/.next/
+site/
+_site/
+.docusaurus/
+sphinx-docs/
+api-docs/
+generated-docs/
+
+# JSDoc
+doc/
+docs/
+documentation/
+
+# TypeDoc
+typedoc-output/
+
+# ============================================================================
+# ASSETS GERADOS
+# ============================================================================
+
+# Ícones gerados
+*.ico
+*.icns
+favicon.*
+
+# Fonte web
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# Mapas de origem (opcional)
+# *.js.map
+# *.css.map
+
+# ============================================================================
+# SISTEMA DE CONTROLE DE VERSÃO
+# ============================================================================
+
+# Git
+.git/
+.gitignore.local
+.gitmodules
+*.orig
+.git-credentials
+.github/
+.gitattributes
+
+# Mercurial
+.hg/
+.hgignore
+
+# Subversion
+.svn/
+
+# Fossil
+_FOSSIL_
+.fslckout
+
+# CVS
+CVS/
+
+# ============================================================================
+# HISTÓRICO E BACKUPS
+# ============================================================================
+
+# Backups
+*.bak
+*.backup
+*~
+.bak/
+backups/
+*.old
+*.prev
+backup-*
+archive/
+
+# Histórico de editor
+.history/
+.local/history
+
+# Histórico de versão
+.version-history
+version-history/
+
+# Histórico de conversão (opcional - remover se quiser manter)
+# .conversion-history/
+# conversion-cache/
+
+# ============================================================================
+# ARQUIVOS DE SINCRONIZAÇÃO
+# ============================================================================
+
+# Sync
+Sync.log
+SyncArchive/
+cloud-sync/
+dropbox/
+google-drive/
+onedrive/
+icloud/
+
+# Conflitos de merge
+*.rej
+*.conflict
+
+# ============================================================================
+# ARQUIVOS DE SISTEMA DE PACOTES
+# ============================================================================
+
+# npm
+npm-debug.log
+npm-error.log
+package-lock.json.local
+node-modules/
+
+# Yarn
+yarn-error.log
+.yarn-integrity
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# pnpm
+pnpm-lock.yaml
+.pnpm-store/
+
+# Bower
+bower_components/
+.bower-registry
+
+# JSPM
+jspm_packages/
+jspm-*
+
+# ============================================================================
+# ARQUIVOS DE BUILD E CACHE DE COMPILADOR
+# ============================================================================
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.json.bak
+
+# Babel
+.babel-cache/
+.babel-cache.json
+
+# tsc
+.tsc-output/
+.tsc-cache/
+
+# Webpack
+.webpack-cache/
+webpack-assets.json
+
+# Parcel
+.parcel-cache
+parcel-cache/
+
+# esbuild
+.esbuild-cache/
+
+# SWC
+.swc-cache/
+
+# Gulp
+gulpfile.local.js
+
+# Grunt
+gruntfile.local.js
+
+# Make
+.make-cache/
+
+# ============================================================================
+# ARQUIVOS DE MONITORAMENTO
+# ============================================================================
+
+# Nodemon
+.nodemon.json.local
+
+# Supervisor
+*.sock
+
+# PM2
+.pm2/
+pm2-logs/
+
+# Forever
+.forever/
+
+# ============================================================================
+# ARQUIVOS ESPECÍFICOS DO PROJETO
+# ============================================================================
+
+# Conversão de partituras (se quiser ignorar MIDI gerados)
+# converted-midi/
+# output-midi/
+
+# Cache de análise
+.analysis-cache/
+.processing-cache/
+
+# Histórico de conversão
+.conversion-history
+conversion-cache/
+conversion-logs/
+
+# Uploads temporários
+uploads/temp/
+uploads/.tmp/
+
+# Downloads temporários
+downloads/temp/
+downloads/.tmp/
+
+# ============================================================================
+# ARQUIVOS DE DESENVOLVIMENTO ESPECÍFICOS
+# ============================================================================
+
+# Variáveis de teste
+.test.env
+.test-config.js
+
+# Dados de teste
+test-data/
+fixtures/generated/
+mock-data/
+
+# Relatórios
+reports/
+test-reports/
+coverage-reports/
+
+# Profiling
+*.prof
+profiling-data/
+
+# Debugging
+.debuginfo
+debug-logs/
+
+# ============================================================================
+# ARQUIVOS DE CONFIGURAÇÃO DE SERVIDOR
+# ============================================================================
+
+# Apache
+.htaccess.local
+.htpasswd
+
+# Nginx
+nginx.conf.local
+.nginx-cache/
+
+# Docker
+docker-compose.override.yml
+Dockerfile.local
+.dockerignore.local
+
+# Kubernetes
+k8s/local/
+.kube/config
+
+# ============================================================================
+# ARQUIVOS DE CI/CD
+# ============================================================================
+
+# GitHub Actions
+.github/workflows/local/
+.github/cache/
+
+# GitLab CI
+.gitlab-ci.local.yml
+
+# Jenkins
+.jenkins/
+jenkins-data/
+
+# Travis CI
+.travis.yml.local
+
+# CircleCI
+.circleci/local/
+
+# GitHub Pages
+.jekyll-cache/
+.jekyll-metadata
+
+# ============================================================================
+# VARIÁVEIS DE AMBIENTE ESPECÍFICAS
+# ============================================================================
+
+# Stripe
+stripe-keys.json
+
+# AWS
+aws-config.local.js
+.aws-credentials.json
+
+# Google Cloud
+google-cloud-key.json
+.gcloud-auth/
+
+# Azure
+azure-credentials.json
+.azure-auth/
+
+# Supabase
+.supabase-key
+
+# Firebase
+.firebaserc.local
+serviceAccountKey.json.local
+
+# ============================================================================
+# ARQUIVOS FINAIS E DIVERSOS
+# ============================================================================
+
+# macOS específico
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Arquivos de bloquei de arquivo
+.lock
+.swp
+.lnk
+
+# Pasta recente
+recent-files/
+
+# Qualquer arquivo que comece com ponto (exceto .gitignore)
+.*
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.npmrc
+!.nvmrc
+!.eslintrc*
+!.prettierrc*
+!.stylelintrc*
+!.browserslistrc
+!.babelrc*
+
+# ============================================================================
+# COMENTÁRIOS ÚTEIS
+# ============================================================================
+
+# Se precisar descommentar (remover o #) para NÃO ignorar um arquivo:
+# !importante.js
+# !config.json
+# !.env.example
+
+# Para restaurar um arquivo deletado:
+# git checkout HEAD -- arquivo-importante.txt
+
+# Para forçar adicionar um arquivo ignorado:
+# git add -f arquivo-ignorado.js
