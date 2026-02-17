@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Partitura para MIDI - Guia de Exorcismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🎵 Conversor de Partitura para MIDI</h1>
+            <p class="subtitle">Transforme suas partituras em arquivos MIDI com precisão absoluta</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Step 1: Upload -->
+            <section class="step-section active" id="step1">
+                <div class="step-header">
+                    <span class="step-number">1</span>
+                    <h2>Selecione sua Partitura</h2>
+                </div>
+
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📄</div>
+                    <p class="upload-text">Clique ou arraste uma partitura aqui</p>
+                    <p class="upload-hint">PNG, JPEG ou JPG (máximo 10MB)</p>
+                    <input type="file" id="fileInput" accept="image/png,image/jpeg,image/jpg" hidden>
+                </div>
+
+                <div id="uploadStatus" class="status-message" style="display: none;"></div>
+            </section>
+
+            <!-- Step 2: Analysis -->
+            <section class="step-section" id="step2">
+                <div class="step-header">
+                    <span class="step-number">2</span>
+                    <h2>Analisar Partitura</h2>
+                </div>
+
+                <div class="image-preview">
+                    <img id="previewImage" src="" alt="Preview da partitura">
+                </div>
+
+                <button id="analyzeBtn" class="btn btn-primary">Analisar Partitura</button>
+                <div id="analyzeStatus" class="status-message" style="display: none;"></div>
+            </section>
+
+            <!-- Step 3: Review Notes -->
+            <section class="step-section" id="step3">
+                <div class="step-header">
+                    <span class="step-number">3</span>
+                    <h2>Revisar Notas Detectadas</h2>
+                </div>
+
+                <div class="notes-container">
+                    <div class="notes-info">
+                        <p>Total de notas: <strong id="totalNotes">0</strong></p>
+                        <p>Duração total: <strong id="totalDuration">0:00</strong></p>
+                    </div>
+
+                    <div class="piano-keyboard" id="pianoKeyboard">
+                        <!-- Gerado dinamicamente -->
+                    </div>
+
+                    <div class="notes-list">
+                        <h3>Sequência de Notas:</h3>
+                        <table id="notesTable">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nota</th>
+                                    <th>Oitava</th>
+                                    <th>Duração (ms)</th>
+                                    <th>Tipo de Nota</th>
+                                </tr>
+                            </thead>
+                            <tbody id="notesBody">
+                                <!-- Preenchido dinamicamente -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="actions">
+                        <button id="reanalyzeBtn" class="btn btn-secondary">Reanalysar</button>
+                        <button id="generateBtn" class="btn btn-primary">Gerar MIDI</button>
+                    </div>
+                </div>
+
+                <div id="reviewStatus" class="status-message" style="display: none;"></div>
+            </section>
+
+            <!-- Step 4: Download -->
+            <section class="step-section" id="step4">
+                <div class="step-header">
+                    <span class="step-number">4</span>
+                    <h2>MIDI Gerado com Sucesso!</h2>
+                </div>
+
+                <div class="success-container">
+                    <div class="success-icon">✅</div>
+                    <p class="success-message">Seu arquivo MIDI foi gerado com sucesso!</p>
+
+                    <div class="midi-info">
+                        <p><strong>Nome do arquivo:</strong> <span id="midiFileName">partitura.mid</span></p>
+                        <p><strong>Notas convertidas:</strong> <span id="midiNoteCount">0</span></p>
+                        <p><strong>Duração:</strong> <span id="midiDuration">0:00</span></p>
+                    </div>
+
+                    <button id="downloadBtn" class="btn btn-primary btn-large">⬇️ Baixar MIDI</button>
+
+                    <div class="action-links">
+                        <button id="playBtn" class="btn btn-secondary">🔊 Ouvir Preview</button>
+                        <button id="newConversionBtn" class="btn btn-secondary">🔄 Nova Conversão</button>
+                    </div>
+                </div>
+
+                <div id="downloadStatus" class="status-message" style="display: none;"></div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Guia de Exorcismo - Conversor de Partitura para MIDI</p>
+            <p>Desenvolvido com ♥ para músicos e compositores</p>
+        </footer>
+    </div>
+
+    <!-- Audio Element for Preview -->
+    <audio id="audioPlayer" style="display: none;"></audio>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsmidgen@0.1.5/build/jsmidgen.js"></script>
+    <script src="script.js"></script>
+</body>
+                      </html>
